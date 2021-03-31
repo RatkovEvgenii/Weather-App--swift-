@@ -24,6 +24,7 @@
 		84CE670D25A0090C003DACF0 /* MyCitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE670C25A0090C003DACF0 /* MyCitiesCell.swift */; };
 		84CE671125A00EB5003DACF0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE671025A00EB5003DACF0 /* WeatherViewController.swift */; };
 		84CE671525A00ECF003DACF0 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE671425A00ECF003DACF0 /* WeatherCell.swift */; };
+		AA59B98526152AE7006C1524 /* XViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B98426152AE7006C1524 /* XViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		84CE670C25A0090C003DACF0 /* MyCitiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCitiesCell.swift; sourceTree = "<group>"; };
 		84CE671025A00EB5003DACF0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		84CE671425A00ECF003DACF0 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		AA59B98426152AE7006C1524 /* XViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				843ECBFD259BD00000456690 /* SceneDelegate.swift */,
 				843ECBFB259BD00000456690 /* AppDelegate.swift */,
 				843ECC11259BD63400456690 /* LoginFormController.swift */,
+				AA59B98426152AE7006C1524 /* XViewController.swift */,
 				84565A5425A75AF8009EE3B1 /* WeatherCollectionViewLayout.swift */,
 				844AAA7225A11F08009BB6BC /* WeekDayPicker.swift */,
 				84565A5125A73D2E009EE3B1 /* CustomCityViewCell.swift */,
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				843ECC12259BD63400456690 /* LoginFormController.swift in Sources */,
+				AA59B98526152AE7006C1524 /* XViewController.swift in Sources */,
 				84565A5525A75AF8009EE3B1 /* WeatherCollectionViewLayout.swift in Sources */,
 				843ECBFC259BD00000456690 /* AppDelegate.swift in Sources */,
 				844AAA7025A11CF3009BB6BC /* GradientView.swift in Sources */,
