@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,13 +25,19 @@
 		84CE671125A00EB5003DACF0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE671025A00EB5003DACF0 /* WeatherViewController.swift */; };
 		84CE671525A00ECF003DACF0 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CE671425A00ECF003DACF0 /* WeatherCell.swift */; };
 		AA59B98526152AE7006C1524 /* XViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA59B98426152AE7006C1524 /* XViewController.swift */; };
+		AAC726BD26B5C7D50083B4B9 /* SessionSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC726BC26B5C7D40083B4B9 /* SessionSingleton.swift */; };
+		AAC726C826B5D87F0083B4B9 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC726C726B5D87F0083B4B9 /* WeatherService.swift */; };
 		AAD9F86026B025D000060E33 /* CustomPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9F85F26B025D000060E33 /* CustomPushAnimator.swift */; };
 		AAD9F86426B0272D00060E33 /* CustomPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9F86326B0272D00060E33 /* CustomPopAnimator.swift */; };
 		AAD9F86826B027EB00060E33 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9F86726B027EB00060E33 /* CustomNavigationController.swift */; };
 		AAD9F86B26B0285500060E33 /* CustomInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9F86A26B0285500060E33 /* CustomInteractiveTransition.swift */; };
+		CC330E4F237FA416E11AD9B0 /* Pods_Wheather_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C894118E9992F3AE1630073 /* Pods_Wheather_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		287686D939F65EAB35F7A802 /* Pods-Wheather App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather App.debug.xcconfig"; path = "Target Support Files/Pods-Wheather App/Pods-Wheather App.debug.xcconfig"; sourceTree = "<group>"; };
+		2FE5114B70FD6C10D37E079E /* Pods-Wheather App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wheather App.release.xcconfig"; path = "Target Support Files/Pods-Wheather App/Pods-Wheather App.release.xcconfig"; sourceTree = "<group>"; };
+		3C894118E9992F3AE1630073 /* Pods_Wheather_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wheather_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		843ECBF8259BCFFE00456690 /* Wheather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wheather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843ECBFB259BD00000456690 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843ECBFD259BD00000456690 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +58,8 @@
 		84CE671025A00EB5003DACF0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		84CE671425A00ECF003DACF0 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		AA59B98426152AE7006C1524 /* XViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XViewController.swift; sourceTree = "<group>"; };
+		AAC726BC26B5C7D40083B4B9 /* SessionSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSingleton.swift; sourceTree = "<group>"; };
+		AAC726C726B5D87F0083B4B9 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		AAD9F85F26B025D000060E33 /* CustomPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushAnimator.swift; sourceTree = "<group>"; };
 		AAD9F86326B0272D00060E33 /* CustomPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopAnimator.swift; sourceTree = "<group>"; };
 		AAD9F86726B027EB00060E33 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
@@ -63,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC330E4F237FA416E11AD9B0 /* Pods_Wheather_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004EDA4A87CAFA276ADCCC29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				287686D939F65EAB35F7A802 /* Pods-Wheather App.debug.xcconfig */,
+				2FE5114B70FD6C10D37E079E /* Pods-Wheather App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		843ECBEF259BCFFE00456690 = {
 			isa = PBXGroup;
 			children = (
 				843ECBFA259BCFFE00456690 /* Wheather App */,
 				843ECBF9259BCFFE00456690 /* Products */,
+				004EDA4A87CAFA276ADCCC29 /* Pods */,
+				C76423176028832852834FC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,10 +108,12 @@
 		843ECBFA259BCFFE00456690 /* Wheather App */ = {
 			isa = PBXGroup;
 			children = (
+				AAC726C626B5D8610083B4B9 /* Services */,
 				84CE670F25A00E8D003DACF0 /* Weather */,
 				84CE66FE25A0053F003DACF0 /* AllCities */,
 				84CE670825A008CB003DACF0 /* MyCities */,
 				843ECBFD259BD00000456690 /* SceneDelegate.swift */,
+				AAC726BC26B5C7D40083B4B9 /* SessionSingleton.swift */,
 				843ECBFB259BD00000456690 /* AppDelegate.swift */,
 				843ECC11259BD63400456690 /* LoginFormController.swift */,
 				AA59B98426152AE7006C1524 /* XViewController.swift */,
@@ -136,6 +158,14 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
+		AAC726C626B5D8610083B4B9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AAC726C726B5D87F0083B4B9 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		AAD9F86226B026D600060E33 /* CustomAnimateTransitioning */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +177,14 @@
 			path = CustomAnimateTransitioning;
 			sourceTree = "<group>";
 		};
+		C76423176028832852834FC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C894118E9992F3AE1630073 /* Pods_Wheather_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 843ECC0C259BD00F00456690 /* Build configuration list for PBXNativeTarget "Wheather App" */;
 			buildPhases = (
+				0574572DF8E079E7F01FB541 /* [CP] Check Pods Manifest.lock */,
 				843ECBF4259BCFFE00456690 /* Sources */,
 				843ECBF5259BCFFE00456690 /* Frameworks */,
 				843ECBF6259BCFFE00456690 /* Resources */,
+				5F4B8B52FFBA7FE93FDCEC41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,6 +252,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0574572DF8E079E7F01FB541 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wheather App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F4B8B52FFBA7FE93FDCEC41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wheather App/Pods-Wheather App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wheather App/Pods-Wheather App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wheather App/Pods-Wheather App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		843ECBF4259BCFFE00456690 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -225,10 +307,12 @@
 				844AAA7025A11CF3009BB6BC /* GradientView.swift in Sources */,
 				844AAA7325A11F08009BB6BC /* WeekDayPicker.swift in Sources */,
 				84565A5225A73D2E009EE3B1 /* CustomCityViewCell.swift in Sources */,
+				AAC726BD26B5C7D50083B4B9 /* SessionSingleton.swift in Sources */,
 				AAD9F86426B0272D00060E33 /* CustomPopAnimator.swift in Sources */,
 				844AAA7725A123D8009BB6BC /* WeatherColectionView.swift in Sources */,
 				84CE671525A00ECF003DACF0 /* WeatherCell.swift in Sources */,
 				AAD9F86026B025D000060E33 /* CustomPushAnimator.swift in Sources */,
+				AAC726C826B5D87F0083B4B9 /* WeatherService.swift in Sources */,
 				84CE670025A00570003DACF0 /* AllCitiesController.swift in Sources */,
 				AAD9F86826B027EB00060E33 /* CustomNavigationController.swift in Sources */,
 				84CE670525A0059A003DACF0 /* AllCitiesCell.swift in Sources */,
@@ -379,6 +463,7 @@
 		};
 		843ECC0D259BD00F00456690 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287686D939F65EAB35F7A802 /* Pods-Wheather App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -398,6 +483,7 @@
 		};
 		843ECC0E259BD00F00456690 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FE5114B70FD6C10D37E079E /* Pods-Wheather App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
